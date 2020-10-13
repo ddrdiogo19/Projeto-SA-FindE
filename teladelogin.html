@@ -1,34 +1,49 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login SA</title>
-    <link rel="stylesheet" href="loginsa.css">
+    <title>Index FindE</title>
+    <link rel="stylesheet" href="./Style/teladelogin.css">
 
 </head>
   <body>
-      <div class="login">
+      
+          <div class="login">
+          <header>
+               <img src="./Style/FindE_logo.png" class="logo" alt="imagem da logomarca do site">
+          </header>
 
-           <img src="FindE - logo.png" class="usuario" width="100" height="120" alt="">
-           <h2><strong>Login</strong></h2>
-           
-           <form>
-                <p>Usuário</p>
+     <div class="login-campos">
 
-                <input type="text" name="" placeholder="insira seu nome de usuário">
+          <h2><strong>Login</strong></h2>
+          
+          <form>
+          
+               <p>Usuário</p>
 
-                <p>Senha</p>
+          <input type="text" name="usuario" placeholder="insira seu nome de usuário">
 
-                <input type="password" name="" placeholder="Insira sua senha">
-                <input type="submit" name="" value="Login">
+           <br>
+           <p>Senha</p>
+
+          <input type="password" name="senha" placeholder="insira sua senha">
+
                 
-                <a href="#">Esqueceu a sua senha?</a><br>
-                <a href="#">Ainda não possui um cadastro?</a>
-           </form>
+          <button onclick="login()">Login</button>
+                
+          <br>
+
+          <!-- fazer link -->
+          <a href="#">Esqueceu a sua senha?</a><br>
+          <a href="#">Ainda não possui um cadastro?</a>
+       
+     </form>
+     </div>
+          
       </div>
-  </body>
+  
 
    <footer> 
             
@@ -36,4 +51,7 @@
     <a href="http://sc.senai.br/" target="blank"><strong>Com🤍Senai 2020.</strong></a>
           
    </footer>
+
+   <script src="./teladelogin.js"></script>
+</body>
 </html>
