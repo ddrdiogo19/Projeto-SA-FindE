@@ -7,8 +7,10 @@ body {
 }
 
 .login {
-    width: 320px;
-    height: 420px;
+    max-width: 22%;
+    /* 50% = 320 px */
+    height: 70%;
+    /* 73% = 420px *
     border: 2px solid #000;
     border-radius: 80px 0px 80px 0px;
     color: #fff;
