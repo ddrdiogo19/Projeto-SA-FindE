@@ -17,39 +17,42 @@
             <div id="nome">
 
                 <h2 class="nome">Nome e Sobrenome</h2>
-                <input class="primeironome" type="text" name="primeiro_nome">
-                <label class="primeirolabel"><strong>nome</strong></label>
-                <input class="sobrenome" type="text" name="sobre_nome">
-                <label class="segundolabel"><strong>Sobrenome</strong></label>
+                <input class="nomecompleto" id="nomecompleto"type="text" name="nome_completo">
+    
 
             </div>
             
 
-             <h2 class="nome">Crie um Login</h2>
-             <input class="login" type="text" name="Login">
+             <h2 class="nome">Criar Usuário</h2>
+             <input class="usuario" id="usuario" type="text" name="usuario">
 
-             <h2 class="nome">Crie uma senha</h2>
-             <input class="senha" type="password" name="senha">
+             <h2 class="nome">Criar Senha</h2>
+             <input class="senha" id="senha" type="password" name="senha">
 
              <h2 class="nome">Email</h2>
-             <input class="email" type="text" name="email">
+             <input class="email" id="email" type="text" name="email">
 
-             <h2 class="sexo">Sexo</h2>
+             <h2 class="sexo" id="sexo">Sexo</h2>
 
           <select class="opcoes" name="assunto">
 
         <option disabled="disabled" selected="select">--Selecione a opção</option>
         <option>Masculino</option>
         <option>Feminino</option>
+        <option>Ambos</option>
 
 
           </select>
-           
-            <button type="submit"><strong>Cadastrar</strong></button>
+            
+
+            <button type="submit" onclick="Cadastrar()"><strong>Cadastrar</strong></button>
 
         </form>
 
-
      </div>
+
 </body>
+
+<script src="cadastrosa.js"></script>
+
 </html>
