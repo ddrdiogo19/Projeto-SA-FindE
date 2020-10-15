@@ -54,57 +54,24 @@ form {
 
 }
 
-.primeironome {
+.nomecompleto {
 
     position: relative;
-    left: 200px;
-    top: -15px;
+    left: 160px;
+    top: -40px;
     line-height: 40px;
+    width: 468px; 
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
     color: #555
 }
 
-.sobrenome {
+.usuario {
 
     position: relative;
-    left: 180px;
-    top: -15px;
-    line-height: 40px;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-    color: #555
-
-}
-
-.primeirolabel {
-
-    position: relative;
-    color: white;
-    text-transform: capitalize;
-    font-size: 14px;
-    left: 50px;
-    top: -65px;
-}
-
-.segundolabel {
-
-    position: relative;
-    color: white;
-    text-transform: capitalize;
-    font-size: 14px;
-    left: 10px;
-    top: -65px;
-
-}
-
-.login {
-
-    position: relative;
-    left: 200px;
-    top: -20px;
+    left: 160px;
+    top: -40px;
     line-height: 40px;
     width: 468px;
     border-radius: 6px;
@@ -116,8 +83,8 @@ form {
 .senha {
 
     position: relative;
-    left: 200px;
-    top: -27px;
+    left: 160px;
+    top: -30px;
     line-height: 40px;
     width: 468px;
     border-radius: 6px;
@@ -130,7 +97,7 @@ form {
 .email {
 
     position: relative;
-    left: 200px;
+    left: 160px;
     top: -27px;
     line-height: 40px;
     width: 468px;
@@ -145,7 +112,7 @@ button {
     background-color:rgb(60, 125, 223);
     display: block;
     margin:  20px 0px 20px 0px;
-    margin-left: 280px;
+    margin-left: 270px;
     text-align: center;
     border-radius: 12px;
     border: 2px solid #266473;
@@ -170,3 +137,4 @@ button {
     margin-left: 45px;
     font-size: 18px;
 }
+
