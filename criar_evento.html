@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crie seu Evento</title>
+    <link rel="stylesheet" href="./Style/criar_evento.css">
   </head>
   <body>
-    <h1>Crie o seu evento</h1>
-    <label for="esportes">Escolha um esporte:</label>
-
-    <select name="esportes" id="esportes">
+   
+    <div class="crieEvento"><h1>Crie o seu evento</h1></div>
+    
+    <div id="eventos">
+    
+    <select name="esportes" id="esportesSelect">
+      <option disabled="disabled" selected="select">--Selecione um esporte</option>
       <option value="basquete">Basquete</option>
       <option value="caminhada">Caminhada</option>
       <option value="ciclismo">Ciclismo</option>
@@ -25,10 +29,10 @@
     </select>
 
     <br />
-    <label for="local">Escolha uma região:</label>
+    <br/>
 
     <select name="local" id="local">
-      <option value="barra">Barra da Lagoa</option>
+      <option disabled="disabled" selected="select">--Selecione uma região</option>      
       <option value="beiramar1">Beiramar</option>
       <option value="beiramar2">Beiramar Continental</option>
       <option value="corrego">Córrego Grande</option>
@@ -37,20 +41,42 @@
       <option value="trindade">Trindade</option>
     </select>
 
-    <form>
-      <div class="date-range">
-        <div class="col-lg-3">
-          <label for="calend" class="sr-only">Data</label>
-          <div class="input-group datepicker">
+    <form class="diaEvento">
+
+      <div class="date-range col-lg-3">
+        <label for="calend" class="sr-only">Dia do Evento</label>
             <input
-              type="text"
+              type="date"
               data-min-date="today"
               class="form-control date-mask to-date"
               placeholder="dd/mm/aaaa"
             />
-          </div>
-        </div>
-      </div>
     </form>
-  </body>
+         
+          <p></p>
+         
+    <form class="horario">
+      <label for="hora">Escolha um horário*</label>
+
+        <input type="time" id="hora" name="horario" min="06" max="00" required>
+          <!-- validação por atributo required, bool, o navegador obriga o usuário a inserir dados naquele campo antes de enviar o formulário -->
+          <br>
+
+        <small>*Os horários disponíveis são das 06h à 00:00</small>
+
+    </form>
+        
+      <div id="cadastrar">
+        <button type="submit" onclick="cadastrarEvento()">Cadastrar Evento</button>
+      </div>
+
+      <div id="pular">
+        <button type="submit" onclick="pular()">Pular</button>
+      </div>
+     
+      </div>
+        
+    </div>
+    <script src=""></script>
+  </body>  
 </html>
