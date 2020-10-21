@@ -17,16 +17,12 @@ function Pessoa(nomecompleto, usuario, senha, email, sexo){
 }
 
 function Cadastrar(){
-        var armazenados = JSON.parse(localStorage.getItem("Pessoa"))
-        if(armazenados != null){
-        dados.push(armazenados)
-        }
+
+        dados = JSON.parse(localStorage.getItem("Pessoa")) 
         add = new Pessoa (nomecompleto.value, usuario.value, senha.value, email.value, sexo.value)
         dados.push(add)
-        alert("Cadastro efetuado com sucesso!")
         localStorage.setItem("Pessoa", JSON.stringify(dados))
         console.log(add)
-    
-
-
-}
+        alert ("Seu cadastro foi efetuado com sucesso")
+        
+}  
