@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos Cadastrados</title>
+    <link rel="stylesheet" href="relatorio_de_eventos.css"/>
+  </head>
+  <body>
+   <h1>Relatório de Eventos</h1>
+    <br />
+    <label for="local">Selecione à região:</label>
+      <select name="local" id="local" class = "local">
+      <option disabled="disabled" selected="select">--Selecione a opção</option>
+      <option value="barra">Barra da Lagoa</option>
+      <option value="beiramar1">Beiramar Norte</option>
+      <option value="beiramar2">Beiramar Continental</option>
+      <option value="corrego">Córrego Grande</option>
+      <option value="coqueiros">Coqueiros</option>
+      <option value="santa">Santa Mônica</option>
+      <option value="trindade">Trindade</option>
+    </select>
+
+    
+            <button type="submit" onclick="Evento()"><strong>Evento</strong></button>
+            <button type="submit" onclick="Voltar()"><strong>Voltar</strong></button>
+  </body>
+</html>
