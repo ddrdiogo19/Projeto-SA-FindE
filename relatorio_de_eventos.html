@@ -4,24 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eventos Cadastrados</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./Style/relatorio_de_eventos.css"
-    />
+    <link rel="stylesheet" href="relatorio_de_eventos.css"/>
   </head>
   <body>
-    <h1 id="cor_texto">Confira os eventos já cadastrados</h1>
 
-    <div id="eventos">
-      <h3>Aqui os eventos são dispostos por região</h3>
-
-      <br />
-
-      <h2>Beiramar</h2>
-      <h2>Beiramar Continental</h2>
-      <h2>Santa Mônica</h2>
-      <h2>Trindade</h2>
-    </div>
+    <div class="titulo"><h1>Confira os Eventos</h1><br/></div>
+     
+    <div class="opcoes">
+      <br>
+      <label class="cor-regiao" for="local">Selecione à região:</label>
+      <select name="local" id="local" class = "local">
+      <option disabled="disabled" selected="select">--Selecione a opção</option>
+      <option value="barra">Barra da Lagoa</option>
+      <option value="beiramar1">Beiramar Norte</option>
+      <option value="beiramar2">Beiramar Continental</option>
+      <option value="coqueiros">Coqueiros</option>
+      <option value="corrego">Córrego Grande</option>
+      <option value="santa">Santa Mônica</option>
+      <option value="trindade">Trindade</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="eventos"type="submit" onclick="Evento()"><strong>Eventos Cadastrados</strong></button>
+    <a href="#"><button type="submit" onclick="Voltar()"><strong>Voltar</strong></button></a><br>
+  </div>
   </body>
 </html>
