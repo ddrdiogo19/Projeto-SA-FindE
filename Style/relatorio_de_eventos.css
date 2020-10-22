@@ -1,51 +1,76 @@
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
   background-image: url(fundoazul2.jpg);
-  background-size: cover;
+  background-position: center;
   font-family: "Times New Roman", Times, serif;
+  margin-top: 40px;
 }
 
-h1#cor_texto {
-  color: #ffffff;
-  text-align: center;
-}
-
-#eventos {
-  background-color: #ffffff;
-  box-shadow: rgb(116, 113, 113) 2px 2px 1px;
+.titulo {
+  width: 800px;
+  background-color: rgba(75, 148, 207, 0.404);
   margin: auto;
-  width: 400px;
-  height: 300px;
-  padding: 50px;
-  border: 1px solid;
+  color: #ffffff;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: inset 0 0 1em blue, 0 0 1em black;
 }
 
-.dark-primary-color {
-  background: #1976d2;
+.cor-regiao {
+  font-size: 20px;
+  color: white;
 }
-.default-primary-color {
-  background: #2196f3;
+
+.selecao {
+  text-decoration-color: white;
 }
-.light-primary-color {
-  background: #bbdefb;
+
+.opcoes {
+  text-align: center;
+  background-color: rgba(0, 0, 5, 0.8);
+  width: 800px;
+  margin: auto;
+  border-radius: 0px 0px 10px 10px;
+  padding-top: 10px;
 }
-.accent-color {
-  background: #03a9f4;
+
+.eventos {
+  background-color: rgb(60, 125, 223);
+  display: block;
+  margin: 20px 0px 20px 0px;
+  margin-left: 277px;
+  text-align: center;
+  border-radius: 12px;
+  border: 2px solid #266473;
+  padding: 10px 60px;
+  outline: none;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  cursor: pointer;
+  transition: 0.25px;
 }
-/* icones de texto */
-.text-primary-color {
-  color: #ffffff;
+
+button {
+  background-color: rgb(60, 125, 223);
+  display: block;
+  margin: 20px 0px 20px 0px;
+
+  margin-left: 340px;
+  text-align: center;
+  border-radius: 12px;
+  border: 2px solid #266473;
+  padding: 10px 50px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.25px;
 }
-/* cor de divisão */
-.divider-color {
-  border-color: #bdbdbd;
-}
-/* texto primário */
-.primary-text-color {
-  color: #212121;
-}
-/* texto secundário */
-.secondary-text-color {
-  color: #757575;
+
+a {
+  text-decoration: none;
 }

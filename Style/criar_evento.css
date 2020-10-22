@@ -27,7 +27,6 @@ body {
   background-color: rgba(0, 0, 5, 0.8);
   width: 800px;
   margin: auto;
-  /* position: relative; */
   border-radius: 0px 0px 10px 10px;
 }
 
@@ -71,8 +70,6 @@ body {
   position: relative;
   padding: 20px;
   margin-left: 55px;
-
-  /* width: 125px; */
 }
 
 /* horário */
@@ -94,14 +91,15 @@ body {
   display: flex;
   justify-content: space-around;
   width: 800px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 #cadastrar {
   font-family: "Times New Roman", Times, serif;
   color: white;
   background-color: rgb(60, 125, 223);
-
-  /* margin: 70px 0px 0px 0px; */
 
   text-align: center;
   border-radius: 12px;
@@ -116,13 +114,10 @@ body {
   font-family: "Times New Roman", Times, serif;
   color: white;
   background-color: rgb(60, 125, 223);
-  /* margin: 10px 120px 0px 0px; */
-  /* margin-left: 120px; */
   border-radius: 12px;
   border: 2px solid #266473;
   padding: 10px 20px;
-
-  /* transform: translate(715px, 10px); */
+  outline: none;
   cursor: pointer;
   transition: 0.25px;
 }
