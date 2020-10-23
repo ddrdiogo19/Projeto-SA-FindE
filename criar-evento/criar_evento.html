@@ -19,7 +19,7 @@
       <button type="submit" onclick="editar()"><strong>Editar</strong></button>
     </div>
     
-    <select name="esportes" id="esportesSelect">
+    <select name="esportes" id="esportesSelect" required>
       <option disabled="disabled" selected="select">--Selecione um esporte</option>
       <option value="basquete">Basquete</option>
       <option value="caminhada">Caminhada</option>
@@ -38,7 +38,7 @@
     <br />
     <br/>
 
-    <select name="local" id="local">
+    <select name="local" id="local" required>
       <option disabled="disabled" selected="select">--Selecione uma região</option>      
       <option value="beiramar1">Beiramar</option>
       <option value="beiramar2">Beiramar Continental</option>
@@ -53,7 +53,7 @@
       <div id="dia" class="date-range col-lg-3">
         <label for="calend" class="sr-only">Escolha o dia do seu evento</label>
         <br>
-          <input type="date" startDate="date" data-min-date="today"         class="form-control date-mask to-date" placeholder="dd/mm/aaaa" required/>
+          <input type="date" startDate="date" data-min-date="today" max="2020-12-31"       class="form-control date-mask to-date" placeholder="dd/mm/aaaa" required/>
       </div>
     </form>
          
@@ -62,7 +62,7 @@
       
       <label for="hora">Escolha um horário* para o evento</label>
       <br>
-        <input type="time" id="hora" name="horario" min="06" max="00" required value="06:00">
+        <input type="time" id="hora" name="horario" min="00" max="06" required value="06:00" step="600">
           <!-- validação por atributo required, bool, o navegador obriga o usuário a inserir dados naquele campo antes de enviar o formulário -->
           <br>
 

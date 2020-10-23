@@ -75,8 +75,8 @@ button {
   outline: none;
   width: 220px;
   height: 35px;
-  color: #000;
-  background: #fff;
+  color: white;
+  background: rgb(60, 125, 223);
   border-radius: 12px;
   transition: 0.2s;
 }
@@ -108,9 +108,10 @@ footer {
   bottom: 0;
   position: fixed;
   text-align: center;
+  color: white;
 }
 
 footer a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
