@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(fundoazul2.jpg);
+  background-position: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 40px;
+}
+
+.registroformulario {
+  width: 800px;
+  background-color: rgba(75, 148, 207, 0.404);
+  margin: auto;
+  color: #ffffff;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: inset 0 0 1em blue, 0 0 1em black;
+}
+
+.conteudo {
+  background-color: rgba(0, 0, 5, 0.8);
+  width: 800px;
+  margin: auto;
+  border-radius: 0px 0px 10px 10px;
+}
+
+form {
+  padding: 10px;
+}
+
+/* id de nome e sobrenome */
+#nome {
+  width: 100%;
+  height: 100px;
+}
+
+.nome {
+  margin-left: 25px;
+  margin-top: 10px;
+  width: 120px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nomecompleto {
+  position: relative;
+  left: 160px;
+  top: -40px;
+  line-height: 40px;
+  width: 468px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+}
+
+.login {
+  position: relative;
+  left: 160px;
+  top: -40px;
+  line-height: 40px;
+  width: 468px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+}
+
+.senha {
+  position: relative;
+  left: 160px;
+  top: -30px;
+  line-height: 40px;
+  width: 468px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* e-mail */
+.email {
+  position: relative;
+  left: 160px;
+  top: -27px;
+  line-height: 40px;
+  width: 468px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* sexo */
+.sexo {
+  text-align: center;
+  margin-top: -20px;
+  color: white;
+  margin-left: 45px;
+  font-size: 18px;
+}
+
+/* select */
+.opcoes {
+  text-align: center;
+  margin-left: 350px;
+  margin-top: 10px;
+}
+
+/* botão */
+button {
+  background-color: rgb(60, 125, 223);
+  display: block;
+  margin: 20px 0px 20px 0px;
+  margin-left: 270px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  border-radius: 12px;
+  border: 2px solid #266473;
+  padding: 10px 110px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.25px;
+}
