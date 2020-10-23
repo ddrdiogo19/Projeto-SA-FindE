@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(fundoazul2.jpg);
+  background-position: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 40px;
+}
+
+/* cabeçalho */
+.crieEvento {
+  width: 800px;
+  background-color: rgba(75, 148, 207, 0.404);
+  margin: auto;
+  color: #ffffff;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: inset 0 0 1em blue, 0 0 1em black;
+}
+
+/* div que engloba as informações */
+#eventos {
+  background-color: rgba(0, 0, 5, 0.8);
+  width: 800px;
+  margin: auto;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#editar > button {
+  float: right;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  background-color: rgb(60, 125, 223);
+
+  /* para ajustar a posição */
+  margin: 10px 129px 0px 0px;
+  border-radius: 12px;
+  border: 2px solid #266473;
+  padding: 5px 20px;
+  outline: none;
+
+  cursor: pointer;
+  transition: 0.25px;
+}
+
+/* div para os esportes */
+#esportesSelect {
+  text-align: center;
+  margin-left: 350px;
+  margin-top: 65px;
+}
+
+/* div para a região */
+#local {
+  text-align: center;
+  margin-left: 350px;
+  margin-top: 10px;
+}
+
+/* calendário */
+.diaEvento {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  padding: 20px;
+  margin-left: 55px;
+}
+
+/* horário */
+.horario {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  padding: 20px;
+  margin-left: 55px;
+}
+
+.horario > small {
+  color: #bdbdbd;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#cadastrar {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  background-color: rgb(60, 125, 223);
+
+  text-align: center;
+  border-radius: 12px;
+  border: 2px solid #266473;
+  padding: 10px 50px;
+
+  cursor: pointer;
+  transition: 0.25px;
+}
+
+#pular {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  background-color: rgb(60, 125, 223);
+  border-radius: 12px;
+  border: 2px solid #266473;
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.25px;
+}
