@@ -83,10 +83,6 @@ body {
   margin-left: 55px;
 }
 
-.horario > small {
-  color: #bdbdbd;
-}
-
 #buttons {
   display: flex;
   justify-content: space-around;

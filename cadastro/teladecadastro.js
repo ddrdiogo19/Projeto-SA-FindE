@@ -20,8 +20,8 @@ function Cadastrar(){
 
     dados = JSON.parse(localStorage.getItem("Pessoa")) 
 
-    if (dados == null){
-        
+       if (dados == null){
+
         dados = []
         add = new Pessoa (nomecompleto.value, usuario.value, senha.value, email.value, sexo.value)
         dados.push(add)
@@ -35,7 +35,11 @@ function Cadastrar(){
         localStorage.setItem("Pessoa", JSON.stringify(dados))
         alert ("Seu cadastro foi efetuado com sucesso")
 
-    }
-
+    } 
+        
+    /*if (nomecompleto.value == "" ) || (usuario.value == "") || (senha.value == "") || (email.value == "")
+        || (sexo.value == "")) {
+    		alert("Preencha todos os campos!");
+    		return; */ 
 
 }
