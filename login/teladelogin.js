@@ -11,6 +11,8 @@ function login() {
     localStorage
 
     puxar localStorage
+
+    // não esquecer validação esqueceu a sua senha // 
  }
 
 
