@@ -49,7 +49,6 @@
     </select>
 
     <form class="diaEvento">
-      <!-- terminar -->
       <div id="dia" class="date-range col-lg-3">
         <label for="calend" class="sr-only">Escolha o dia do seu evento</label>
         <br>
@@ -58,22 +57,18 @@
     </form>
          
     <form class="horario">
-      <!-- terminar -->
-      
-      <label for="hora">Escolha um horário* para o evento</label>
+      <label for="hora">Escolha um horário para o evento</label>
       <br>
-        <input type="time" id="hora" name="horario" min="00" max="06" required value="06:00" step="600">
+        <input type="time" id="hora" name="horario" required value="06:00">
           <!-- validação por atributo required, bool, o navegador obriga o usuário a inserir dados naquele campo antes de enviar o formulário -->
           <br>
-
-        <small>*Os horários disponíveis são das 06h à 00h</small>
 
     </form>
 
       <br>
     
       <div id="buttons">
-        <button id="cadastrar" type="submit" onclick="cadastrarEvento()"><strong>Cadastrar Evento</strong> </button>
+        <button id="cadastrar" type="submit" onclick="cadastrar()"><strong>Cadastrar Evento</strong> </button>
      
        <button id="pular" type="submit" onclick="pular()"><strong>Pular</strong></button></div>
       </div>

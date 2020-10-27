@@ -1,9 +1,56 @@
-// let selectEsporte = document.getElementById("esportesSelect");
-// let selectLocal = document.getElementById("local");
-// let diaEvento = document.getElementById("dia").valueAsDate;
-// let horaEvento = document.getElementById("hora").valueAsNumber;
+var esporte;
+var local;
+var data;
+var horario;
+var dados = [];
 
-// let eventosCadastrados = []
+function pegarEsporte() {
+  let selectEsporte = document.getElementById("esportesSelect").value;
+
+  esporte = selectEsporte;
+  console.log(esporte)
+}
+
+function pegarLocal() {
+  let selectLocal = document.getElementById("local").value;
+  
+  local = selectLocal
+  console.log(local)
+}
+
+function pegarData() {
+  let diaEvento = document.getElementById("dia").valueAsDate;
+  
+  // converter data
+  data = diaEvento
+  console.log(data)
+}
+
+function pegarHorario() {
+  let horaEvento = document.getElementById("hora").valueAsNumber;
+
+  // converter de utc
+  horario = horaEvento
+  console.log(horario)
+}
+
+function pegarDadosNoLocalStorage() {
+  dados = JSON.parse(localStorage.getItem("Evento")) 
+}
+
+function salvarDadosNoLocalStorage(){
+  pegarDadosNoLocalStorage();
+  localStorage.setItem("Evento", JSON.stringify(dados))
+}
+
+function cadastrar(){
+  pegarEsporte();
+  pegarLocal();
+  pegarData();
+  pegarHorario();
+  salvarDadosNoLocalStorage();
+
+}
 
 // function Evento (selectEsporte, selectLocal, diaEvento, horaEvento){
      
@@ -13,15 +60,27 @@
 //     this.horaEvento = horaEvento  
 // }
 
-// function cadastrarEvento(){
+//     dados = JSON.parse(localStorage.getItem("Evento")) 
 
-//     eventosCadastrados = JSON.parse(localStorage.getItem("Evento")) 
-//     add = new Evento (selectEsporte.value, selectLocal.value, diaEvento, horaEvento)
-//     eventosCadastrados.push(add)
-//     localStorage.setItem("Evento", JSON.stringify(eventosCadastrados))
-//     // console.log(add)
-//     alert(selectEsporte)
-// }
+//        if (dados == null){
+
+//         dados = []
+//         add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
+//         dados.push(add)
+//         localStorage.setItem("Evento", JSON.stringify(dados))
+//         alert ("Seu evento foi cadastrado com sucesso")
+
+//     } else{
+
+//         add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
+//         dados.push(add)
+//         localStorage.setItem("Evento", JSON.stringify(dados))
+//         alert ("Seu evento foi cadastrado com sucesso")
+
+//     }} 
+//   }
+
+
 
 
 
