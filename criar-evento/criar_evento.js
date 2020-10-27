@@ -85,20 +85,20 @@ function Evento (selectEsporte, selectLocal, diaEvento, horaEvento){
 
 
 
-        dados = []
-        add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
-        dados.push(add)
-        localStorage.setItem("Evento", JSON.stringify(dados))
-        alert ("Seu evento foi cadastrado com sucesso")
+    //     dados = []
+    //     add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
+    //     dados.push(add)
+    //     localStorage.setItem("Evento", JSON.stringify(dados))
+    //     alert ("Seu evento foi cadastrado com sucesso")
 
-    } else{
+    // } else{
 
-        add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
-        dados.push(add)
-        localStorage.setItem("Evento", JSON.stringify(dados))
-        alert ("Seu evento foi cadastrado com sucesso")
+    //     add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
+    //     dados.push(add)
+    //     localStorage.setItem("Evento", JSON.stringify(dados))
+    //     alert ("Seu evento foi cadastrado com sucesso")
 
-    }} 
+    // }} 
 
 // function pular {
 
@@ -119,20 +119,20 @@ function Evento (selectEsporte, selectLocal, diaEvento, horaEvento){
 // }
 
 
-function Excluir(){
+// function Excluir(){
 
-   let exclusao = selectEsporte.value
-   dados = JSON.parse(localStorage.getItem("dados"))
+//    let exclusao = selectEsporte.value
+//    dados = JSON.parse(localStorage.getItem("dados"))
       
- for(i=0; i < dados.length; i++){
+//  for(i=0; i < dados.length; i++){
 
-      if(dados[i].esportesSelect == exclusao) {
+//       if(dados[i].esportesSelect == exclusao) {
 
-          dados.splice(i, 1)
+//           dados.splice(i, 1)
 
-      }
+//       }
 
- }
+//  }
 
 //   swal("Evento excluído com sucesso!")
 //   localStorage.setItem("Evento", JSON.stringify(armazenados))
