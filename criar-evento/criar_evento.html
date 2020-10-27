@@ -18,7 +18,10 @@
     <div id="editar">
       <button type="submit" onclick="editar()"><strong>Editar</strong></button>
     </div>
-    
+
+    <div id="excluir">
+      <button type="submit" onclick="Excluir()"><strong>Excluir Evento</strong> </button>
+    </div>
     <select name="esportes" id="esportesSelect" required>
       <option disabled="disabled" selected="select">--Selecione um esporte</option>
       <option value="basquete">Basquete</option>
@@ -49,7 +52,6 @@
     </select>
 
     <form class="diaEvento">
-      <!-- terminar -->
       <div id="dia" class="date-range col-lg-3">
         <label for="calend" class="sr-only">Escolha o dia do seu evento</label>
         <br>
@@ -58,11 +60,10 @@
     </form>
          
     <form class="horario">
-      <!-- terminar -->
       
       <label for="hora">Escolha um horário para o evento</label>
       <br>
-        <input type="time" id="hora" name="horario" required value="06:00">
+        <input type="time" id="hora" name="horario" required value="">
           <!-- validação por atributo required, bool, o navegador obriga o usuário a inserir dados naquele campo antes de enviar o formulário -->
           <br>
 
@@ -71,9 +72,8 @@
       <br>
     
       <div id="buttons">
-        <button id="cadastrar" type="submit" onclick="cadastrarEvento()"><strong>Cadastrar Evento</strong> </button>
-     
-       <button id="pular" type="submit" onclick="pular()"><strong>Pular</strong></button></div>
+        <button id="cadastrar" type="submit" onclick="Cadastrar()"><strong>Cadastrar Evento</strong> </button>
+        <a href="http://127.0.0.1:50120/relatorio/relatorio_de_eventos.html"><button id="pular" type="submit" onclick="pular()"><strong>Pular</strong></button></a></div>
       </div>
      
     </div>
