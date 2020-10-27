@@ -18,7 +18,10 @@
     <div id="editar">
       <button type="submit" onclick="editar()"><strong>Editar</strong></button>
     </div>
-    
+
+    <div id="excluir">
+      <button type="submit" onclick="Excluir()"><strong>Excluir Evento</strong> </button>
+    </div>
     <select name="esportes" id="esportesSelect" required>
       <option disabled="disabled" selected="select">--Selecione um esporte</option>
       <option value="basquete">Basquete</option>
@@ -52,7 +55,7 @@
       <div id="dia" class="date-range col-lg-3">
         <label for="calend" class="sr-only">Escolha o dia do seu evento</label>
         <br>
-          <input type="date" startDate="date" data-min-date="today" max="2020-12-31"       class="form-control date-mask to-date" placeholder="dd/mm/aaaa" required/>
+          <input type="date" startDate="date" data-min-date="today" max="2020-12-31" class="form-control date-mask to-date" placeholder="dd/mm/aaaa" required/>
       </div>
     </form>
          

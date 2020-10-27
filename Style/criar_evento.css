@@ -35,17 +35,31 @@ body {
   font-family: "Times New Roman", Times, serif;
   color: white;
   background-color: rgb(60, 125, 223);
-
   /* para ajustar a posição */
   margin: 10px 129px 0px 0px;
   border-radius: 12px;
   border: 2px solid #266473;
   padding: 5px 20px;
   outline: none;
-
   cursor: pointer;
   transition: 0.25px;
 }
+
+  #excluir > button {
+    float: left;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    background-color: rgb(60, 125, 223);
+    /* para ajustar a posição */
+    margin: 10px 129px 0px 132px;
+    border-radius: 12px;
+    border: 2px solid #266473;
+    padding: 5px 20px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.25px;
+  }
+
 
 /* div para os esportes */
 #esportesSelect {
@@ -81,10 +95,6 @@ body {
   position: relative;
   padding: 20px;
   margin-left: 55px;
-}
-
-.horario > small {
-  color: #bdbdbd;
 }
 
 #buttons {
