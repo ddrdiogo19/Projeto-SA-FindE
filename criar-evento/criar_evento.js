@@ -52,7 +52,7 @@ function cadastrar(){
 
 }
 
-let dados = []
+/* let dados = []
 
 
 function Evento (selectEsporte, selectLocal, diaEvento, horaEvento){
@@ -61,7 +61,7 @@ function Evento (selectEsporte, selectLocal, diaEvento, horaEvento){
     this.selectLocal = selectLocal
     this.diaEvento = diaEvento
     this.horaEvento = horaEvento  
-}
+} */
 
 //     dados = JSON.parse(localStorage.getItem("Evento")) 
 
