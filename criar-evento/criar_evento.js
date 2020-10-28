@@ -69,42 +69,42 @@ function cadastrar(){
 //     this.horaEvento = horaEvento  
 // }
 
-//     dados = JSON.parse(localStorage.getItem("Evento")) 
+dados = JSON.parse(localStorage.getItem("Evento")) 
 
-//        if (dados == null){
+       if (dados == null){
 
-//         dados = []
-//         add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
-//         dados.push(add)
-//         localStorage.setItem("Evento", JSON.stringify(dados))
-//         alert ("Seu evento foi cadastrado com sucesso")
+        dados = []
+        add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
+        dados.push(add)
+        localStorage.setItem("Evento", JSON.stringify(dados))
+         alert ("Seu evento foi cadastrado com sucesso")
 
-//     } else{
+     } else{
 
-//         add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
-//         dados.push(add)
-//         localStorage.setItem("Evento", JSON.stringify(dados))
-//         alert ("Seu evento foi cadastrado com sucesso")
+        add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
+         dados.push(add)
+         localStorage.setItem("Evento", JSON.stringify(dados))
+        alert ("Seu evento foi cadastrado com sucesso")
 
-//     }} 
-//   }
+     }} 
+  }
 
 
 
-    //     dados = []
-    //     add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
-    //     dados.push(add)
-    //     localStorage.setItem("Evento", JSON.stringify(dados))
-    //     alert ("Seu evento foi cadastrado com sucesso")
+       dados = []
+       add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
+       dados.push(add)
+       localStorage.setItem("Evento", JSON.stringify(dados))
+       alert ("Seu evento foi cadastrado com sucesso")
 
-    // } else{
+   } else{
 
-    //     add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
-    //     dados.push(add)
-    //     localStorage.setItem("Evento", JSON.stringify(dados))
-    //     alert ("Seu evento foi cadastrado com sucesso")
+       add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
+       dados.push(add)
+       localStorage.setItem("Evento", JSON.stringify(dados))
+       alert ("Seu evento foi cadastrado com sucesso")
 
-    // }} 
+   }} */ 
 
 // function pular {
 
@@ -112,12 +112,12 @@ function cadastrar(){
 // }
 
 // // function editar(){
-    
+  
 //     eventosCadastrados[indicepesquisa].selectEsporte = selectEsporte.value
 //     eventosCadastrados[indicepesquisa].selectLocal = selectLocal.value
 //     eventosCadastrados[indicepesquisa].diaEvento = diaEvento.value
 //     eventosCadastrados[indicepesquisa].horaEvento = horaEvento.value
-   
+ 
 
 //     swal("Dados atualizados com sucesso!")
 //     localStorage.setItem("Evento", JSON.stringify(dados))
@@ -129,7 +129,7 @@ function cadastrar(){
 
 //    let exclusao = selectEsporte.value
 //    dados = JSON.parse(localStorage.getItem("dados"))
-      
+    
 //  for(i=0; i < dados.length; i++){
 
 //       if(dados[i].esportesSelect == exclusao) {
@@ -144,31 +144,5 @@ function cadastrar(){
 //   localStorage.setItem("Evento", JSON.stringify(armazenados))
 
 // }
-
-// let dados = []
-
-
-
-// date 
-
-// var today = new Date(); //Gravo a data atual na variavel
-// today.setDate(today.getDate() + 7); //Adiciono 7 dias 
-// today = today.toISOString().split('T')[0]; //Formato a data
-
-// var hoje = new Date();
-//   if (agendamento <= hoje) {
-//     alert('Por favor, insira uma data válida!');
-
-// date
-
-// var input = document.getElementById('ultimoDiaTrab');
-// input.addEventListener('change', function() {
-//   var agora = new Date();
-//   var escolhida = new Date(this.value);
-//   if (escolhida < agora) this.value = [agora.getFullYear(), agora.getMonth() + 1, agora.getDate()].map(v => v < 10 ? '0' + v : v).join('-');
-// });
-
-// Neste caso this.value = [agora.getFullYear(), agora.getMonth() + 1, agora.getDate()].map(v => v < 10 ? '0' + v : v).join('-'); repoõe a data escolhida com a data atual, se quiseres somente apagar podes fazer this.value = '';
-
 
 
