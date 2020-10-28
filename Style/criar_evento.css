@@ -45,33 +45,32 @@ body {
   transition: 0.25px;
 }
 
-  #excluir > button {
-    float: left;
-    font-family: "Times New Roman", Times, serif;
-    color: white;
-    background-color: rgb(60, 125, 223);
-    /* para ajustar a posição */
-    margin: 10px 129px 0px 132px;
-    border-radius: 12px;
-    border: 2px solid #266473;
-    padding: 5px 20px;
-    outline: none;
-    cursor: pointer;
-    transition: 0.25px;
-  }
-
+#excluir > button {
+  float: left;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  background-color: rgb(60, 125, 223);
+  /* para ajustar a posição */
+  margin: 10px 129px 0px 132px;
+  border-radius: 12px;
+  border: 2px solid #266473;
+  padding: 5px 20px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.25px;
+}
 
 /* div para os esportes */
 #esportesSelect {
   text-align: center;
-  margin-left: 350px;
+  margin-left: 320px;
   margin-top: 65px;
 }
 
 /* div para a região */
 #local {
   text-align: center;
-  margin-left: 350px;
+  margin-left: 320px;
   margin-top: 10px;
 }
 
@@ -83,7 +82,7 @@ body {
   font-weight: 700;
   position: relative;
   padding: 20px;
-  margin-left: 55px;
+  margin-left: 5px;
 }
 
 /* horário */
@@ -94,7 +93,7 @@ body {
   font-weight: 700;
   position: relative;
   padding: 20px;
-  margin-left: 55px;
+  margin-left: 5px;
 }
 
 #buttons {

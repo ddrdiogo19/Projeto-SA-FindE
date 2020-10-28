@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Style/criar_evento.css"/>
     <title>Crie seu Evento</title>
-    <link rel="stylesheet" href="/Style/criar_evento.css">
+  
   </head>
   <body>
    
@@ -52,19 +53,20 @@
     </select>
 
     <form class="diaEvento">
-      <div id="dia" class="date-range col-lg-3">
+      <div class="date-range col-lg-3">
         <label for="calend" class="sr-only">Escolha o dia do seu evento</label>
         <br>
-          <input type="date" startDate="date" data-min-date="today" max="2020-12-31" class="form-control date-mask to-date" placeholder="dd/mm/aaaa" required/>
+          <input id="dia" type="date" startDate="date" data-min-date="today" max="2020-12-31" class="form-control date-mask to-date" placeholder="dd/mm/aaaa" required/>
       </div>
     </form>
          
     <form class="horario">
       <label for="hora">Escolha um horário para o evento</label>
       <br>
-        <input type="time" id="hora" name="horario" required value="06:00">
-          <!-- validação por atributo required, bool, o navegador obriga o usuário a inserir dados naquele campo antes de enviar o formulário -->
-          <br>
+      <input type="number" id="inputHora" min="6" max="22" placeholder="HH"> : 
+      <input type="number" id="inputMinuto" min="00" max="50" step="10" placeholder="MM">
+         <!-- validação por atributo required, bool, o navegador obriga o usuário a inserir dados naquele campo antes de enviar o formulário -->
+      <br>
 
     </form>
 
@@ -73,7 +75,8 @@
       <div id="buttons">
         <button id="cadastrar" type="submit" onclick="cadastrar()"><strong>Cadastrar Evento</strong> </button>
      
-       <button id="pular" type="submit" onclick="pular()"><strong>Pular</strong></button></div>
+       <a href="/relatorio/relatorio_de_eventos.html"><button id="pular" type="submit" onclick="pular()"><strong>Pular</strong></button></a></div>
+      <br>
       </div>
      
     </div>

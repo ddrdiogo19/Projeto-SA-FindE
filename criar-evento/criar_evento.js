@@ -1,37 +1,42 @@
-var esporte;
-var local;
-var data;
-var horario;
-var dados = [];
+let esporte;
+let local;
+let data;
+let horario;
+let dados = []  //  [{"esporte": esporte, "local": local, ...}];
 
 function pegarEsporte() {
-  let selectEsporte = document.getElementById("esportesSelect").value;
+  const selectEsporte = document.getElementById("esportesSelect").value;
 
   esporte = selectEsporte;
   console.log(esporte)
 }
 
 function pegarLocal() {
-  let selectLocal = document.getElementById("local").value;
+  const selectLocal = document.getElementById("local").value;
   
   local = selectLocal
   console.log(local)
 }
 
 function pegarData() {
-  let diaEvento = document.getElementById("dia").valueAsDate;
+  const diaEvento = document.getElementById("dia").value;
   
-  // converter data
-  data = diaEvento
-  console.log(data)
+  // diaEvento = new Date(dateString)
+  console.log(diaEvento);
+
+
 }
 
 function pegarHorario() {
-  let horaEvento = document.getElementById("hora").valueAsNumber;
+  const hora = document.getElementById("inputHora").value;
+  const minuto = document.getElementById("inputMinuto").value;
 
-  // converter de utc
-  horario = horaEvento
+  horario = `${hora}:${minuto}`;
   console.log(horario)
+}
+
+function criarObjeto(){
+
 }
 
 function pegarDadosNoLocalStorage() {
@@ -40,7 +45,8 @@ function pegarDadosNoLocalStorage() {
 
 function salvarDadosNoLocalStorage(){
   pegarDadosNoLocalStorage();
-  localStorage.setItem("Evento", JSON.stringify(dados))
+  //  dados.push(objeto)
+  localStorage.setItem("Evento", JSON.stringify(dados));
 }
 
 function cadastrar(){
@@ -48,20 +54,20 @@ function cadastrar(){
   pegarLocal();
   pegarData();
   pegarHorario();
+  criarObjeto();
   salvarDadosNoLocalStorage();
-
 }
 
-let dados = []
+// let dados = []
 
 
-function Evento (selectEsporte, selectLocal, diaEvento, horaEvento){
+// function Evento (selectEsporte, selectLocal, diaEvento, horaEvento){
      
-    this.selectEsporte = selectEsporte 
-    this.selectLocal = selectLocal
-    this.diaEvento = diaEvento
-    this.horaEvento = horaEvento  
-}
+//     this.selectEsporte = selectEsporte 
+//     this.selectLocal = selectLocal
+//     this.diaEvento = diaEvento
+//     this.horaEvento = horaEvento  
+// }
 
 //     dados = JSON.parse(localStorage.getItem("Evento")) 
 
