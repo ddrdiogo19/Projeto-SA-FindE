@@ -64,14 +64,14 @@ body {
 /* div para os esportes */
 #esportesSelect {
   text-align: center;
-  margin-left: 350px;
+  margin-left: 320px;
   margin-top: 65px;
 }
 
 /* div para a região */
 #local {
   text-align: center;
-  margin-left: 350px;
+  margin-left: 320px;
   margin-top: 10px;
 }
 
@@ -83,7 +83,7 @@ body {
   font-weight: 700;
   position: relative;
   padding: 20px;
-  margin-left: 55px;
+  margin-left: 5px;
 }
 
 /* horário */
@@ -94,7 +94,7 @@ body {
   font-weight: 700;
   position: relative;
   padding: 20px;
-  margin-left: 55px;
+  margin-left: 5px;
 }
 
 #buttons {
