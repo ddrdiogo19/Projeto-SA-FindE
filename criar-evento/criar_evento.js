@@ -2,7 +2,7 @@ let esporte;
 let local;
 let data;
 let horario;
-let dados = []  //  [{"esporte": esporte, "local": local, ...}];
+let dados = [] 
 
 function pegarEsporte() {
   const selectEsporte = document.getElementById("esportesSelect").value;
@@ -97,30 +97,12 @@ dados = JSON.parse(localStorage.getItem("Evento"))
 //     eventosCadastrados[indicepesquisa].horaEvento = horaEvento.value
  
 
-//     swal("Dados atualizados com sucesso!")
-//     localStorage.setItem("Evento", JSON.stringify(dados))
-
-// }
-
-
-// function Excluir(){
-
-//    let exclusao = selectEsporte.value
-//    dados = JSON.parse(localStorage.getItem("dados"))
-    
-//  for(i=0; i < dados.length; i++){
-
-//       if(dados[i].esportesSelect == exclusao) {
-
 //           dados.splice(i, 1)
 
 //       }
+      
+// }}
 
-//  }
 
-//   swal("Evento excluído com sucesso!")
-//   localStorage.setItem("Evento", JSON.stringify(armazenados))
-
-// }
 
 
