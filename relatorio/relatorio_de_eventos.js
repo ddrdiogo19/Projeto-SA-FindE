@@ -1,28 +1,13 @@
-var regiaoSelecionada = document.getElementsByClassName("eventos");
+function Eventos() {
 
-
-
-function Evento() {
-
-  let listacompleta = ''
-  armazenados = JSON.parse(localStorage.getItem("livros"))
-
-      for (i=0; i < armazenados.length; i++){
-
-          listacompleta += (Object.values(armazenados[i]).join(' , ')) + '<br>'
-
-      }
-
-      document.getElementById("Resultado").innerHTML = listacompleta
-  
-} 
-
-function Evento() {
-
-
-}
-
-function Voltar() {
-
-  
-}
+    let listacompleta = ''
+      dados = JSON.parse(localStorage.getItem("Evento"))
+    
+          for (i=0; i < dados.length; i++){
+    
+              listacompleta += (Object.values(dados[i]).join(' , ')) + '<br>'
+            }
+    
+          document.getElementById("resposta").innerHTML = listacompleta
+      
+    } 

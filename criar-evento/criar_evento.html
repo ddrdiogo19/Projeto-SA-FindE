@@ -13,7 +13,6 @@
       <h1>Crie o seu evento</h1>
     </div>
 
-    
     <div id="eventos">
     
     <div id="editar">
@@ -21,22 +20,22 @@
     </div>
 
     <div id="excluir">
-      <button type="submit" onclick="Excluir()"><strong>Excluir Evento</strong> </button>
+      <button type="submit" onclick="excluir()"><strong>Excluir Evento</strong> </button>
     </div>
     <select name="esportes" id="esportesSelect" required>
       <option disabled="disabled" selected="select">--Selecione um esporte</option>
-      <option value="basquete">Basquete</option>
-      <option value="caminhada">Caminhada</option>
-      <option value="ciclismo">Ciclismo</option>
-      <option value="corrida">Corrida</option>
-      <option value="futebol">Futebol</option>
-      <option value="fut-vol">Fute-vôlei</option>
-      <option value="ioga">Ioga</option>
-      <option value="slackline">Slackline</option>
-      <option value="skate">Skate</option>
-      <option value="surf">Surf</option>
-      <option value="trilha">Trilha</option>
-      <option value="volei">Vôlei</option>
+      <option value="Basquete">Basquete</option>
+      <option value="Caminhada">Caminhada</option>
+      <option value="Ciclismo">Ciclismo</option>
+      <option value="Corrida">Corrida</option>
+      <option value="Futebol">Futebol</option>
+      <option value="Fute-vôlei">Fute-vôlei</option>
+      <option value="Ioga">Ioga</option>
+      <option value="Slackline">Slackline</option>
+      <option value="Skate">Skate</option>
+      <option value="Surf">Surf</option>
+      <option value="Trilha">Trilha</option>
+      <option value="Volei">Vôlei</option>
     </select>
 
     <br />
@@ -44,12 +43,12 @@
 
     <select name="local" id="local" required>
       <option disabled="disabled" selected="select">--Selecione uma região</option>      
-      <option value="beiramar1">Beiramar</option>
-      <option value="beiramar2">Beiramar Continental</option>
-      <option value="coqueiros">Coqueiros</option>
-      <option value="corrego">Córrego Grande</option>
-      <option value="santa">Santa Mônica</option>
-      <option value="trindade">Trindade</option>
+      <option value="Beiramar">Beiramar</option>
+      <option value="Beiramar-Continental">Beiramar Continental</option>
+      <option value="Coqueiros">Coqueiros</option>
+      <option value="Corrego">Córrego Grande</option>
+      <option value="Santa-Mônica">Santa Mônica</option>
+      <option value="Trindade">Trindade</option>
     </select>
 
     <form class="diaEvento">
@@ -59,7 +58,7 @@
           <input id="dia" type="date" startDate="date" data-min-date="today" max="2020-12-31" class="form-control date-mask to-date" placeholder="dd/mm/aaaa" required/>
       </div>
     </form>
-         
+  
     <form class="horario">
       <label for="hora">Escolha um horário para o evento</label>
       <br>
@@ -74,14 +73,13 @@
       <br>
     
       <div id="buttons">
-        <button id="cadastrar" type="submit" onclick="cadastrar()"><strong>Cadastrar Evento</strong> </button>
-     
+        <a href="/relatorio/relatorio_de_eventos.html"><button id="cadastrar" type="submit" onclick="cadastrar()"><strong>Cadastrar Evento</strong> </button></a>
        <a href="/relatorio/relatorio_de_eventos.html"><button id="pular" type="submit" onclick="pular()"><strong>Pular</strong></button></a></div>
       <br>
       </div>
      
     </div>
         
-    <script src="/criar_evento.js"></script>
+    <script src="/criar-evento/criar_evento.js"></script>
   </body>  
 </html>

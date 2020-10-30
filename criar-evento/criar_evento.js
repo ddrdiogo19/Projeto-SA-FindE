@@ -1,8 +1,8 @@
-let esporte; 
+let esporte;
 let local;
 let data;
 let horario;
-let dados = []; //  [{"esporte": esporte, "local": local, ...}];
+let dados = [] 
 
 function pegarEsporte() {
   const selectEsporte = document.getElementById("esportesSelect").value;
@@ -19,13 +19,28 @@ function pegarLocal() {
 }
 
 function pegarData() {
-  const diaEvento = document.getElementById("dia").value;
   
-  // diaEvento = new Date(dateString)
-  console.log(diaEvento);
+  let diaEvento = document.getElementById('dia').value.split('-'),
+  dataFormatada = ((`${diaEvento[2]}-${diaEvento[1]}-${diaEvento[0]}`))
+  
+  //dataFormatada = localStorage.setItem("dia", JSON.stringify(dados));// 
 
+console.log(dataFormatada);
 
 }
+
+// function formataData() {
+// pegarData(diaEvento);
+
+// formatar mês;
+// formatar dia;
+// formatar ano;
+
+//     let dataFormatada = ((diaEvento.getDate() )) + "/" + ((diaEvento.getMonth() + 1)) + "/" + diaEvento.getFullYear(); 
+    
+//     console.log(dataFormatada);
+
+// }
 
 function pegarHorario() {
   const hora = document.getElementById("inputHora").value;
@@ -56,90 +71,62 @@ function cadastrar(){
   pegarHorario();
   criarObjeto();
   salvarDadosNoLocalStorage();
-}
 
-/*function Evento (selectEsporte, selectLocal, diaEvento, horaEvento){
+  function Evento (esporte, local, data, horario){
      
-  this.selectEsporte = selectEsporte 
-  this.selectLocal = selectLocal
-  this.diaEvento = diaEvento
-  this.horaEvento = horaEvento  
-} 
+    this.esporte = esporte 
+    this.local = local
+    this.data = data
+    this.horario = horario  
+}
 
 dados = JSON.parse(localStorage.getItem("Evento")) 
 
        if (dados == null){
 
         dados = []
-        add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
+        add = new Evento (esporte, local, data, horario)
         dados.push(add)
         localStorage.setItem("Evento", JSON.stringify(dados))
          alert ("Seu evento foi cadastrado com sucesso")
 
      } else{
 
-        add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
+        add = new Evento (esporte, local, data, horario)
          dados.push(add)
          localStorage.setItem("Evento", JSON.stringify(dados))
         alert ("Seu evento foi cadastrado com sucesso")
 
-     }} 
+     }
   }
 
 
+  /*function editar(){
 
-       dados = []
-       add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
-       dados.push(add)
-       localStorage.setItem("Evento", JSON.stringify(dados))
-       alert ("Seu evento foi cadastrado com sucesso")
+    dados.esporte = esporte.value
+    dados.local = local.value
+    dados.data = data.value
+    dados.horario = horario.value
 
-   } else{
+     swal("Dados atualizados com sucesso!")
+     localStorage.setItem("Evento", JSON.stringify(dados))
 
-       add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
-       dados.push(add)
-       localStorage.setItem("Evento", JSON.stringify(dados))
-       alert ("Seu evento foi cadastrado com sucesso")
+} */
 
-   }} */ 
+function excluir(){
+  let exclusao = esporte.value
+   dados = JSON.parse(localStorage.getItem("Eventos"))
 
-// function pular {
+    for(i=0; i < dados.length; i++){
 
+      if(dados[i].esporte == exclusao) {
 
-// }
+          dados.splice(i, 1)
 
-// // function editar(){
-  
-//     eventosCadastrados[indicepesquisa].selectEsporte = selectEsporte.value
-//     eventosCadastrados[indicepesquisa].selectLocal = selectLocal.value
-//     eventosCadastrados[indicepesquisa].diaEvento = diaEvento.value
-//     eventosCadastrados[indicepesquisa].horaEvento = horaEvento.value
- 
-
-//     swal("Dados atualizados com sucesso!")
-//     localStorage.setItem("Evento", JSON.stringify(dados))
-
-// }
+      }
+      
+}}
 
 
-// function Excluir(){
-
-//    let exclusao = selectEsporte.value
-//    dados = JSON.parse(localStorage.getItem("dados"))
-    
-//  for(i=0; i < dados.length; i++){
-
-//       if(dados[i].esportesSelect == exclusao) {
-
-//           dados.splice(i, 1)
-
-//       }
-
-//  }
-
-//   swal("Evento excluído com sucesso!")
-//   localStorage.setItem("Evento", JSON.stringify(armazenados))
-
-// }
 
 
