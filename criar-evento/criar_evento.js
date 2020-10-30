@@ -19,13 +19,16 @@ function pegarLocal() {
 }
 
 function pegarData() {
-  const diaEvento = document.getElementById("dia").value;
   
-  // diaEvento = new Date(dateString)
-  console.log(diaEvento);
+  let diaEvento = document.getElementById('dia').value.split('-'),
+  dataFormatada = ((`${diaEvento[2]}-${diaEvento[1]}-${diaEvento[0]}`))
+  
+  // dataFormatada = localStorage.setItem("dia", JSON.stringify(dados));
 
+  console.log(dataFormatada);
 
 }
+
 
 function pegarHorario() {
   const hora = document.getElementById("inputHora").value;
@@ -35,9 +38,9 @@ function pegarHorario() {
   console.log(horario)
 }
 
-function criarObjeto(){
+// function criarObjeto(){
 
-}
+// }
 
 function pegarDadosNoLocalStorage() {
   dados = JSON.parse(localStorage.getItem("Evento")) 
@@ -56,60 +59,35 @@ function cadastrar(){
   pegarHorario();
   criarObjeto();
   salvarDadosNoLocalStorage();
-}
 
-// let dados = []
-
-
-// function Evento (selectEsporte, selectLocal, diaEvento, horaEvento){
+  function Evento (esporte, local, data, horario){
      
-//     this.selectEsporte = selectEsporte 
-//     this.selectLocal = selectLocal
-//     this.diaEvento = diaEvento
-//     this.horaEvento = horaEvento  
-// }
+    this.esporte = esporte 
+    this.local = local
+    this.data = data
+    this.horario = horario  
+}
 
 dados = JSON.parse(localStorage.getItem("Evento")) 
 
        if (dados == null){
 
         dados = []
-        add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
+        add = new Evento (esporte, local, data, horario)
         dados.push(add)
         localStorage.setItem("Evento", JSON.stringify(dados))
          alert ("Seu evento foi cadastrado com sucesso")
 
      } else{
 
-        add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
+        add = new Evento (esporte, local, data, horario)
          dados.push(add)
          localStorage.setItem("Evento", JSON.stringify(dados))
         alert ("Seu evento foi cadastrado com sucesso")
 
-     }} 
+     }
   }
 
-
-
-       dados = []
-       add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
-       dados.push(add)
-       localStorage.setItem("Evento", JSON.stringify(dados))
-       alert ("Seu evento foi cadastrado com sucesso")
-
-   } else{
-
-       add = new Evento (selectEsporte, selectLocal, diaEvento, horaEvento)
-       dados.push(add)
-       localStorage.setItem("Evento", JSON.stringify(dados))
-       alert ("Seu evento foi cadastrado com sucesso")
-
-   }} */ 
-
-// function pular {
-
-
-// }
 
 // // function editar(){
   

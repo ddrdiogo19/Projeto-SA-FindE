@@ -20,27 +20,30 @@
       
       <option disabled="disabled" selected="select">--Selecione a opção</option>
       
-      <option value="barra">Barra da Lagoa</option>
-      <option value="beiramar1">Beiramar Norte</option>
-      <option value="beiramar2">Beiramar Continental</option>
-      <option value="coqueiros">Coqueiros</option>
-      <option value="corrego">Córrego Grande</option>
-      <option value="santa">Santa Mônica</option>
-      <option value="trindade">Trindade</option>
+      <option value="Barra-da-Lagoa">Barra da Lagoa</option>
+      <option value="Beiramar-Norte">Beiramar Norte</option>
+      <option value="Beiramar-Continental">Beiramar Continental</option>
+      <option value="Coqueiros">Coqueiros</option>
+      <option value="Córrego-Grande">Córrego Grande</option>
+      <option value="Santa-Mônica">Santa Mônica</option>
+      <option value="Trindade">Trindade</option>
     </select>
       
+    <div id="resposta" style="color: white; font-size: larger; font-family: 'Times New Roman', Times, serif">
+      <!-- div para InnerHtml, em lista com os eventos da região selecionada -->
+    </div>
+
+    <br>
+    <br>
+  
+    <div id="botoes">
     
-  <div id="botoes">
-    
-    <button class="eventos" type="submit" onclick="Eventos()"><strong>Eventos Cadastrados</strong></button>
+    <button class="eventos" type="submit" onclick="eventos()"><strong>Eventos Cadastrados</strong></button>
    
     <a href="/criar-evento/criar_evento.html"><button type="submit" onclick="Voltar()"><strong>Voltar</strong></button></a><br>
   </div>
 
-    <div id="resposta">
-      <!-- div para InnerHtml, em lista com os eventos da região selecionada -->
-    </div>
-  
+   
 </div>
 
     <script src="/relatorio/relatorio_de_eventos.js"></script>
