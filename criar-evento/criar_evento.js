@@ -2,7 +2,10 @@ let esporte;
 let local;
 let data;
 let horario;
-let dados = [] 
+let dados = []
+let arrayInformações = {
+  esporte: '', local: '', data: '', horario: ''
+}
 
 function pegarEsporte() {
   const selectEsporte = document.getElementById("esportesSelect").value;
