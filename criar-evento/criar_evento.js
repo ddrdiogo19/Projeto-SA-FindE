@@ -2,10 +2,7 @@ let esporte;
 let local;
 let data;
 let horario;
-let dados = []
-let arrayInformações = {
-  esporte: '', local: '', data: '', horario: ''
-}
+let dados = []  //  [{"esporte": esporte, "local": local, ...}];
 
 function pegarEsporte() {
   const selectEsporte = document.getElementById("esportesSelect").value;
@@ -25,20 +22,16 @@ function pegarData() {
   
   let diaEvento = document.getElementById('dia').value.split('-'),
   dataFormatada = ((`${diaEvento[2]}-${diaEvento[1]}-${diaEvento[0]}`))
-  
-  // dataFormatada = localStorage.setItem("dia", JSON.stringify(dados));
-
   console.log(dataFormatada);
 
 }
-
 
 function pegarHorario() {
   const hora = document.getElementById("inputHora").value;
   const minuto = document.getElementById("inputMinuto").value;
 
   horario = `${hora}:${minuto}`;
-  console.log(horario)
+  console.log(horario); 
 }
 
 // function criarObjeto(){
@@ -51,7 +44,6 @@ function pegarDadosNoLocalStorage() {
 
 function salvarDadosNoLocalStorage(){
   pegarDadosNoLocalStorage();
-  //  dados.push(objeto)
   localStorage.setItem("Evento", JSON.stringify(dados));
 }
 
@@ -60,7 +52,6 @@ function cadastrar(){
   pegarLocal();
   pegarData();
   pegarHorario();
-  criarObjeto();
   salvarDadosNoLocalStorage();
 
   function Evento (esporte, local, data, horario){
@@ -90,22 +81,4 @@ dados = JSON.parse(localStorage.getItem("Evento"))
 
      }
   }
-
-
-// // function editar(){
-  
-//     eventosCadastrados[indicepesquisa].selectEsporte = selectEsporte.value
-//     eventosCadastrados[indicepesquisa].selectLocal = selectLocal.value
-//     eventosCadastrados[indicepesquisa].diaEvento = diaEvento.value
-//     eventosCadastrados[indicepesquisa].horaEvento = horaEvento.value
- 
-
-//           dados.splice(i, 1)
-
-//       }
-      
-// }}
-
-
-
 
