@@ -52,10 +52,14 @@
     </select>
 
     <form class="diaEvento">
-      <div class="date-range col-lg-3">
-        <label for="calend" class="sr-only">Escolha o dia do seu evento</label>
+      <div class="date">
+        <label for="calend">Escolha o dia do seu evento</label>
         <br>
-          <input id="dia" type="date" startDate="date" data-min-date="today" max="2020-12-31" class="form-control date-mask to-date" placeholder="dd/mm/aaaa" required/>
+        
+          <input type="number" id="inputDia" min="01" max="31" placeholder="Dia" required> / 
+          <input type="number" id="inputMes" min="01" max="12"  placeholder="Mês" required> /
+          <input type="number" id="inputAno" min="2020" max="2020" placeholder="Ano" required>
+
       </div>
     </form>
   

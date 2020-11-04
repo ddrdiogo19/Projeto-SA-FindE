@@ -1,6 +1,8 @@
 let esporte;
 let local;
-let data;
+let dia;
+let mes;
+let ano;
 let horario;
 let dados = []  //  [{"esporte": esporte, "local": local, ...}];
 
@@ -20,8 +22,11 @@ function pegarLocal() {
 
 function pegarData() {
   
-  let diaEvento = document.getElementById('dia').value.split('-'),
-  dataFormatada = ((`${diaEvento[2]}-${diaEvento[1]}-${diaEvento[0]}`))
+  let dia = document.getElementById('inputDia').value;
+  let mes = document.getElementById('inputMes').value;
+  let ano = document.getElementById('inputAno').value;
+
+  dataFormatada = ((`${dia}-${mes}-${ano}`))
   console.log(dataFormatada);
 
 }
@@ -33,10 +38,6 @@ function pegarHorario() {
   horario = `${hora}:${minuto}`;
   console.log(horario); 
 }
-
-// function criarObjeto(){
-
-// }
 
 function pegarDadosNoLocalStorage() {
   dados = JSON.parse(localStorage.getItem("Evento")) 
@@ -54,11 +55,11 @@ function cadastrar(){
   pegarHorario();
   salvarDadosNoLocalStorage();
 
-  function Evento (esporte, local, data, horario){
+  function Evento (esporte, local, dataFormatada, horario){
      
     this.esporte = esporte 
     this.local = local
-    this.data = data
+    this.dataFormatada = dataFormatada
     this.horario = horario  
 }
 
@@ -67,14 +68,14 @@ dados = JSON.parse(localStorage.getItem("Evento"))
        if (dados == null){
 
         dados = []
-        add = new Evento (esporte, local, data, horario)
+        add = new Evento (esporte, local, dataFormatada, horario)
         dados.push(add)
         localStorage.setItem("Evento", JSON.stringify(dados))
          alert ("Seu evento foi cadastrado com sucesso")
 
      } else{
 
-        add = new Evento (esporte, local, data, horario)
+        add = new Evento (esporte, local, dataFormatada, horario)
          dados.push(add)
          localStorage.setItem("Evento", JSON.stringify(dados))
         alert ("Seu evento foi cadastrado com sucesso")
