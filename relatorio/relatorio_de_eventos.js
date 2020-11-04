@@ -14,7 +14,7 @@ function Eventos() {
   if (local == inputLocal) {
     const evento = `Esporte: ${esporte}, Local: ${local}, Dia: ${dataFormatada}, Hora: ${horario}`
   
-    listacompleta += evento + '<br>'
+    listacompleta += evento + '<br> <br>'
     }
 }
         document.getElementById("resposta").innerHTML = listacompleta

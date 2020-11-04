@@ -127,4 +127,5 @@ button {
   color: white;
   cursor: pointer;
   transition: 0.25px;
+  text-decoration: none;
 }
