@@ -4,49 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eventos Cadastrados</title>
-    <link rel="stylesheet" href="/Style/relatorio_de_eventos.css"/>
+    <link rel="stylesheet" href="/Style/relatorio_de_eventos.css" />
   </head>
   <body>
-
     <div class="titulo">
       <h1>Confira os Eventos</h1>
-    
     </div>
-     
-  <div class="opcoes">
-      <br>
+
+    <div class="opcoes">
+      <br />
       <label class="cor-regiao" for="local">Selecione à região:</label>
-      <select name="local" id="local" class = "local">
-      
-      <option disabled="disabled" selected="select">--Selecione a opção</option>
-      
-      <option value="Beiramar-Norte">Beiramar Norte</option>
-      <option value="Beiramar-Continental">Beiramar Continental</option>
-      <option value="Coqueiros">Coqueiros</option>
-      <option value="Santa-Mônica">Santa Mônica</option>
-      <option value="Trindade">Trindade</option>
-    </select>
+      <select name="local" id="local" class="local">
+        <option disabled="disabled" selected="select">
+          --Selecione a opção
+        </option>
 
-    <br><br>
-      
-    <ul id="resposta" style="color: white; font-size: larger; font-family: 'Times New Roman', Times, serif; background: rgb(60, 125, 223); width: 90%; margin-left: 50px;" >
-      <!-- div para InnerHtml, em lista com os eventos da região selecionada -->
-    </ul>
+        <option value="Beiramar-Norte">Beiramar Norte</option>
+        <option value="Beiramar-Continental">Beiramar Continental</option>
+        <option value="Coqueiros">Coqueiros</option>
+        <option value="Santa-Mônica">Santa Mônica</option>
+        <option value="Trindade">Trindade</option>
+      </select>
 
-    <br>
-    <br>
-  
-    <div id="botoes">
-    
-    <button class="eventos" type="submit" onclick="Eventos()"><strong>Eventos Cadastrados</strong></button>
-   
-    <a href="/criar-evento/criar_evento.html"><button type="submit" onclick="Voltar()"><strong>Voltar</strong></button></a><br>
-  </div>
+      <br /><br />
 
-   
-</div>
+      <div id="resposta">
+        <table
+          id="teste"
+          style="
+            color: white;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            background: rgb(60, 125, 223);
+            width: 90%;
+            margin-left: 50px;
+          "
+        >
+          <!-- <ul id="resposta" style="color: white; font-size: larger; font-family: 'Times New Roman', Times, serif; background: rgb(60, 125, 223); width: 90%; margin-left: 50px;" > -->
+          <!-- div para InnerHtml, em lista com os eventos da região selecionada -->
+          <!-- </ul> -->
+        </table>
+      </div>
+      <br />
+      <br />
+
+      <div id="botoes">
+        <button class="eventos" type="submit" onclick="Eventos()">
+          <strong>Eventos Cadastrados</strong>
+        </button>
+
+        <a href="/criar-evento/criar_evento.html"
+          ><button type="button" onclick="Voltar()">
+            <strong>Voltar</strong>
+          </button></a
+        ><br />
+      </div>
+    </div>
 
     <script src="/relatorio/relatorio_de_eventos.js"></script>
-
   </body>
 </html>

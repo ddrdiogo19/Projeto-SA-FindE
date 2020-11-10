@@ -8,6 +8,11 @@ element.addEventListener("submit", (event) => {
   login();
 });
 
+function esquecer() {
+  const esqueceEmail = prompt("Digite seu e-mail");
+  alert(`Recuperação de senha enviada para ${esqueceEmail}`);
+}
+
 //  função que recebe login e senha como parametros e busca eles no array de logins
 function validateLogin(username, password) {
   data.find((user, index) => {
