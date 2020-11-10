@@ -1,3 +1,5 @@
+let indicepesquisa = 0;
+
 var tabela = document.getElementById("teste");
 var dados = JSON.parse(localStorage.getItem("Evento"));
 
@@ -44,4 +46,30 @@ function Eventos() {
       tabela.append(tr);
     }
   }
+}
+
+function editar() {
+  let pesquisa = esporte.value;
+  dados = JSON.parse(localStorage.getItem("Eventos"));
+
+  dados[indicepesquisa].esporte = pesquisa;
+  dados[indicepesquisa].local = editora.value;
+
+  swal("Dados atualizados com sucesso!");
+  localStorage.setItem("Evento", JSON.stringify(dados));
+}
+
+function pesquisar() {
+  let pesquisa = esporte.value;
+  dados = JSON.parse(localStorage.getItem("Eventos"));
+
+  for (i = 0; i < dados.length; i++) {
+    if (dados[i].esporte == pesquisa) {
+      document.getElementById("esporteSelect").value = dados[i].esporte;
+      document.getElementById("local").value = dados[i].local;
+
+      indicepesquisa = i;
+    }
+  }
+  console.log(pesquisa);
 }

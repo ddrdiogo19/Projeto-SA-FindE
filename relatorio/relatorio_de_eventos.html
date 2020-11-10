@@ -12,52 +12,67 @@
     </div>
 
     <div class="opcoes">
-      <br />
-      <label class="cor-regiao" for="local">Selecione à região:</label>
-      <select name="local" id="local" class="local">
-        <option disabled="disabled" selected="select">
-          --Selecione a opção
-        </option>
+      <div id="button">
+        <div id="excluir">
+          <button type="submit" onclick="excluir()">
+            <strong>Excluir Evento</strong>
+          </button>
+        </div>
+        <div id="editar">
+          <button type="submit" onclick="editar()">
+            <strong>Editar</strong>
+          </button>
+        </div>
 
-        <option value="Beiramar-Norte">Beiramar Norte</option>
-        <option value="Beiramar-Continental">Beiramar Continental</option>
-        <option value="Coqueiros">Coqueiros</option>
-        <option value="Santa-Mônica">Santa Mônica</option>
-        <option value="Trindade">Trindade</option>
-      </select>
+        <br />
+        <br />
+        <br />
+        <br />
+        <label class="cor-regiao" for="local">Selecione à região:</label>
 
-      <br /><br />
+        <select name="local" id="local" class="local">
+          <option disabled="disabled" selected="select">
+            --Selecione a opção
+          </option>
 
-      <div id="resposta">
-        <table
-          id="teste"
-          style="
-            color: white;
-            font-size: larger;
-            font-family: 'Times New Roman', Times, serif;
-            background: rgb(60, 125, 223);
-            width: 90%;
-            margin-left: 50px;
-          "
-        >
-          <!-- <ul id="resposta" style="color: white; font-size: larger; font-family: 'Times New Roman', Times, serif; background: rgb(60, 125, 223); width: 90%; margin-left: 50px;" > -->
-          <!-- div para InnerHtml, em lista com os eventos da região selecionada -->
-          <!-- </ul> -->
-        </table>
-      </div>
-      <br />
-      <br />
+          <option value="Beiramar-Norte">Beiramar Norte</option>
+          <option value="Beiramar-Continental">Beiramar Continental</option>
+          <option value="Coqueiros">Coqueiros</option>
+          <option value="Santa-Mônica">Santa Mônica</option>
+          <option value="Trindade">Trindade</option>
+        </select>
 
-      <div id="botoes">
-        <button class="eventos" type="submit" onclick="Eventos()">
-          <strong>Eventos Cadastrados</strong>
-        </button>
+        <br /><br />
 
-        <a href="/criar-evento/criar_evento.html"
-          ><button type="button" onclick="Voltar()">
-            <strong>Voltar</strong>
-          </button></a
-        ><br />
+        <div id="resposta">
+          <table
+            id="teste"
+            style="
+              color: white;
+              font-size: larger;
+              font-family: 'Times New Roman', Times, serif;
+              background: rgb(60, 125, 223);
+              width: 90%;
+              margin-left: 50px;
+            "
+          ></table>
+        </div>
+
+        <br />
+        <br />
+
+        <div id="botoes">
+          <button class="eventos" type="submit" onclick="Eventos()">
+            <strong>Eventos Cadastrados</strong>
+          </button>
+
+          <a href="/criar-evento/criar_evento.html"
+            ><button type="button" onclick="Voltar()">
+              <strong>Voltar</strong>
+            </button></a
+          >
+          <br />
+        </div>
       </div>
     </div>
 

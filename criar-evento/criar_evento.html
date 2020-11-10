@@ -3,83 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Style/criar_evento.css"/>
+    <link rel="stylesheet" href="/Style/criar_evento.css" />
     <title>Crie seu Evento</title>
-  
   </head>
   <body>
-   
     <div class="crieEvento">
       <h1>Crie o seu evento</h1>
     </div>
 
     <div id="eventos">
-    
-    <div id="editar">
-      <button type="submit" onclick="editar()"><strong>Editar</strong></button>
-    </div>
+      <select name="esportes" id="esportesSelect" required>
+        <option disabled="disabled" selected="select">
+          --Selecione um esporte
+        </option>
+        <option value="Basquete">Basquete</option>
+        <option value="Caminhada">Caminhada</option>
+        <option value="Ciclismo">Ciclismo</option>
+        <option value="Corrida">Corrida</option>
+        <option value="Futebol">Futebol</option>
+        <option value="Fute-vôlei">Fute-vôlei</option>
+        <option value="Ioga">Ioga</option>
+        <option value="Slackline">Slackline</option>
+        <option value="Skate">Skate</option>
+        <option value="Volei">Vôlei</option>
+      </select>
 
-    <div id="excluir">
-      <button type="submit" onclick="excluir()"><strong>Excluir Evento</strong> </button>
-    </div>
-    <select name="esportes" id="esportesSelect" required>
-      <option disabled="disabled" selected="select">--Selecione um esporte</option>
-      <option value="Basquete">Basquete</option>
-      <option value="Caminhada">Caminhada</option>
-      <option value="Ciclismo">Ciclismo</option>
-      <option value="Corrida">Corrida</option>
-      <option value="Futebol">Futebol</option>
-      <option value="Fute-vôlei">Fute-vôlei</option>
-      <option value="Ioga">Ioga</option>
-      <option value="Slackline">Slackline</option>
-      <option value="Skate">Skate</option>
-      <option value="Volei">Vôlei</option>
-    </select>
+      <br />
+      <br />
 
-    <br />
-    <br/>
+      <select name="local" id="local" required>
+        <option disabled="disabled" selected="select">
+          --Selecione uma região
+        </option>
+        <option value="Beiramar-Norte">Beiramar-Norte</option>
+        <option value="Beiramar-Continental">Beiramar Continental</option>
+        <option value="Coqueiros">Coqueiros</option>
+        <option value="Santa-Mônica">Santa Mônica</option>
+        <option value="Trindade">Trindade</option>
+      </select>
 
-    <select name="local" id="local" required>
-      <option disabled="disabled" selected="select">--Selecione uma região</option>      
-      <option value="Beiramar-Norte">Beiramar-Norte</option>
-      <option value="Beiramar-Continental">Beiramar Continental</option>
-      <option value="Coqueiros">Coqueiros</option>
-      <option value="Santa-Mônica">Santa Mônica</option>
-      <option value="Trindade">Trindade</option>
-    </select>
+      <form class="diaEvento">
+        <div class="date">
+          <label for="calend">Escolha o dia do seu evento</label>
+          <br />
 
-    <form class="diaEvento">
-      <div class="date">
-        <label for="calend">Escolha o dia do seu evento</label>
-        <br>
-        
-          <input type="number" id="inputDia" min="01" max="31" placeholder="Dia" required> / 
-          <input type="number" id="inputMes" min="01" max="12"  placeholder="Mês" required> /
-          <input type="number" id="inputAno" min="2020" max="2020" placeholder="Ano" required>
+          <input
+            type="number"
+            id="inputDia"
+            min="01"
+            max="31"
+            placeholder="Dia"
+            required
+          />
+          /
+          <input
+            type="number"
+            id="inputMes"
+            min="01"
+            max="12"
+            placeholder="Mês"
+            required
+          />
+          /
+          <input
+            type="number"
+            id="inputAno"
+            min="2020"
+            max="2020"
+            placeholder="Ano"
+            required
+          />
+        </div>
+      </form>
 
-      </div>
-    </form>
-  
-    <form class="horario">
-      <label for="hora">Escolha um horário para o evento</label>
-      <br>
-      <input type="number" id="inputHora" min="6" max="22" placeholder="HH"> : 
-      <input type="number" id="inputMinuto" min="00" max="50" step="10" placeholder="MM">
-         <!-- validação por atributo required, bool, o navegador obriga o usuário a inserir dados naquele campo antes de enviar o formulário -->
-      <br>
+      <form class="horario">
+        <label for="hora">Escolha um horário para o evento</label>
+        <br />
+        <input type="number" id="inputHora" min="6" max="22" placeholder="HH" />
+        :
+        <input
+          type="number"
+          id="inputMinuto"
+          min="00"
+          max="50"
+          step="10"
+          placeholder="MM"
+        />
+        <!-- validação por atributo required, bool, o navegador obriga o usuário a inserir dados naquele campo antes de enviar o formulário -->
+        <br />
+      </form>
 
-    </form>
+      <br />
 
-      <br>
-    
       <div id="buttons">
-       <a href="/relatorio/relatorio_de_eventos.html"><button id="cadastrar" type="submit" onclick="cadastrar()"><strong>Cadastrar Evento</strong></button></a>
-       <a href="/relatorio/relatorio_de_eventos.html"><button id="pular" type="submit" onclick="pular()"><strong>Pular</strong></button></a></div>
-      <br>
+        <a href="/relatorio/relatorio_de_eventos.html"
+          ><button id="cadastrar" type="submit" onclick="cadastrar()">
+            <strong>Cadastrar Evento</strong>
+          </button></a
+        >
+        <a href="/relatorio/relatorio_de_eventos.html"
+          ><button id="pular" type="submit" onclick="pular()">
+            <strong>Pular</strong>
+          </button></a
+        >
+
+        <br />
       </div>
-     
     </div>
-        
+
     <script src="/criar-evento/criar_evento.js"></script>
-  </body>  
+  </body>
 </html>
