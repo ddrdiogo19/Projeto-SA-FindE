@@ -5,6 +5,16 @@ let mes;
 let ano;
 let horario;
 let dados = []; //  [{"esporte": esporte, "local": local, ...}];
+let numeroDeEventos = 0;
+
+function pegarIndice() {
+  pegarDadosNoLocalStorage();
+
+  let indice = document.getElementById("recebeIndice");
+
+  numeroDeEventos = dados.length + 1;
+  indice.value = numeroDeEventos;
+}
 
 function pegarEsporte() {
   const selectEsporte = document.getElementById("esportesSelect").value;
@@ -38,11 +48,14 @@ function pegarHorario() {
 }
 
 function pegarDadosNoLocalStorage() {
-  dados = JSON.parse(localStorage.getItem("Evento"));
+  const ls = JSON.parse(localStorage.getItem("Evento"));
+
+  if (ls != null) dados = ls;
 }
 
 function salvarDadosNoLocalStorage() {
   pegarDadosNoLocalStorage();
+
   localStorage.setItem("Evento", JSON.stringify(dados));
 }
 
@@ -52,12 +65,19 @@ function cadastrar() {
   pegarData();
   pegarHorario();
   salvarDadosNoLocalStorage();
+  pegarIndice();
 
   function Evento(esporte, local, dataFormatada, horario) {
     this.esporte = esporte;
     this.local = local;
     this.dataFormatada = dataFormatada;
     this.horario = horario;
+    this.id = numeroDeEventos;
+
+    // criar mais um vetor com id com um número
+    // criar mais uma coluna no relatório
+    // criar um número ou select - pensar
+    // array.length - mostrar no campo (serve como id)
   }
 
   dados = JSON.parse(localStorage.getItem("Evento"));

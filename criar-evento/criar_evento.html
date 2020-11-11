@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/Style/criar_evento.css" />
     <title>Crie seu Evento</title>
   </head>
-  <body>
+  <body onload="pegarIndice()">
     <div class="crieEvento">
       <h1>Crie o seu evento</h1>
     </div>
@@ -41,6 +41,12 @@
         <option value="Santa-Mônica">Santa Mônica</option>
         <option value="Trindade">Trindade</option>
       </select>
+
+      <input
+        id="recebeIndice"
+        disabled
+        style="width: 50px; text-align: center"
+      />
 
       <form class="diaEvento">
         <div class="date">
@@ -106,9 +112,9 @@
             <strong>Pular</strong>
           </button></a
         >
-
-        <br />
       </div>
+      <br />
+      <br />
     </div>
 
     <script src="/criar-evento/criar_evento.js"></script>

@@ -99,7 +99,7 @@ body {
 #buttons {
   display: flex;
   justify-content: space-around;
-  width: 1020px;
+  width: 800px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   text-decoration: none;

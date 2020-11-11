@@ -1,5 +1,3 @@
-let indicepesquisa = 0;
-
 var tabela = document.getElementById("teste");
 var dados = JSON.parse(localStorage.getItem("Evento"));
 
@@ -27,6 +25,10 @@ function Eventos() {
   th4.textContent = "Horário";
   header.append(th4);
 
+  var th5 = document.createElement("th");
+  th5.textContent = "ID";
+  header.append(th5);
+
   tabela.append(header);
 
   for (var i = 0; i < dados.length; i++) {
@@ -35,7 +37,7 @@ function Eventos() {
     if (inputLocal == evento.local) {
       var tr = document.createElement("tr");
 
-      for (j = 0; j < 4; j++) {
+      for (j = 0; j < 5; j++) {
         var td = document.createElement("td");
         var texto = evento[Object.keys(evento)[j]];
 
@@ -48,28 +50,19 @@ function Eventos() {
   }
 }
 
-function editar() {
-  let pesquisa = esporte.value;
-  dados = JSON.parse(localStorage.getItem("Eventos"));
+function excluir() {
+  //  criar verificação pra saber se: 1 - é numero, 2 - id existe
+  const idEventoExcluido = prompt("Qual o ID do evento que você quer excluir?");
 
-  dados[indicepesquisa].esporte = pesquisa;
-  dados[indicepesquisa].local = editora.value;
+  const eventoQueSeraExcluido = dados.find(
+    (evento) => evento.id == idEventoExcluido
+  );
 
-  swal("Dados atualizados com sucesso!");
-  localStorage.setItem("Evento", JSON.stringify(dados));
-}
+  const dadosSemEventoExcluido = dados.filter(
+    (evento) => evento != eventoQueSeraExcluido
+  );
 
-function pesquisar() {
-  let pesquisa = esporte.value;
-  dados = JSON.parse(localStorage.getItem("Eventos"));
+  dados = dadosSemEventoExcluido;
 
-  for (i = 0; i < dados.length; i++) {
-    if (dados[i].esporte == pesquisa) {
-      document.getElementById("esporteSelect").value = dados[i].esporte;
-      document.getElementById("local").value = dados[i].local;
-
-      indicepesquisa = i;
-    }
-  }
-  console.log(pesquisa);
+  localStorage.setItem("Evento", JSON.stringify(dadosSemEventoExcluido));
 }
