@@ -73,11 +73,6 @@ function cadastrar() {
     this.dataFormatada = dataFormatada;
     this.horario = horario;
     this.id = numeroDeEventos;
-
-    // criar mais um vetor com id com um número
-    // criar mais uma coluna no relatório
-    // criar um número ou select - pensar
-    // array.length - mostrar no campo (serve como id)
   }
 
   dados = JSON.parse(localStorage.getItem("Evento"));

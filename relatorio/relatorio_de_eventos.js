@@ -66,5 +66,3 @@ function excluir() {
 
   localStorage.setItem("Evento", JSON.stringify(dadosSemEventoExcluido));
 }
-
-function editar() {}
