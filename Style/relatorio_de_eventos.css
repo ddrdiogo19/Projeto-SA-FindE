@@ -60,7 +60,7 @@ button {
   display: block;
   margin: 20px 0px 20px 0px;
 
-  margin-left: 340px;
+  margin-left: 315px;
   text-align: center;
   border-radius: 12px;
   border: 2px solid #266473;
@@ -84,6 +84,7 @@ button {
   outline: none;
   cursor: pointer;
   transition: 0.25px;
+  
 }
 
 #excluir > button {
@@ -99,6 +100,7 @@ button {
   outline: none;
   cursor: pointer;
   transition: 0.25px;
+
 }
 
 a {

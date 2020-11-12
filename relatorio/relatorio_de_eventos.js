@@ -53,7 +53,9 @@ function Eventos() {
 function excluir() {
   //  criar verificação pra saber se: 1 - é numero, 2 - id existe
   const idEventoExcluido = prompt("Qual o ID do evento que você quer excluir?");
-
+  alert(`Seu evento foi excluido com sucesso!`);
+  document.location.reload(true);
+ 
   const eventoQueSeraExcluido = dados.find(
     (evento) => evento.id == idEventoExcluido
   );
